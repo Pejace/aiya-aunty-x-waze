@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="'UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+         <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Title -->
+        <title>aiya - travel along with malaysia aunty</title>
+
+        <!-- Waze Icon -->
+        <link rel="icon" size="16x16" href="assets/images/waze-logo.png">
+
+        <!--AOS-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    
+    <body>
+        <!-- TOP SECTION START-->
+        <!-- Image -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 background-image">
+                    <img id="ipoh-image" src="assets/photos/ipoh street.jpg" width="400px">
+                    <a href="how-to-create.html#inspiration-content-wrapper" target="_self">
+                        <img id="back-icon" src="assets/icons/back-icon.png" style="position:relative; z-index:3; top:-500px; width:24px;height:auto;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Name N Icons -->
+        <div class="container-fluid">
+            <div class="row place-content-section">
+                <div class="col-6 place-title-section">
+                    <h2 id="blue-txt" style="font-family:pilowlava;">PERAK IPOH</h2>
+                    <h4 id="green-txt">post by aunty wang</h4>
+                </div>
+                <div class="col-6 place-title-section-icon">
+                    <img id="share-icon"src="assets/icons/Share.png">
+                    <img src="assets/icons/Bookmark.png">
+                </div>
+            </div>
+        </div>
+        <!-- TOP SECTION END -->
+
+
+        <!-- Ratings -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 rate-icon-wrapper">
+                    <img id="rate-icon" src="assets/icons/Thumbs Up.png">
+                    <h3 style="font-weight: bold;">300</h3>
+                    <h3 id="rate-name">LIKES</h3>
+                </div>
+                <div class="col-sm-4 rate-icon-wrapper">
+                    <img id="rate-icon" src="assets/icons/Thumbs Down.png">
+                    <h3 style="font-weight: bold;">5</h3>
+                    <h3 id="rate-name">DISLIKES</h3>
+                </div>
+                <div class="col-sm-4 rate-icon-wrapper">
+                    <img id="rate-icon" src="assets/icons/Comment.png">
+                    <h3 style="font-weight: bold;">24k</23>
+                    <h3 id="rate-name">COMMENTS</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Short Description -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 short-description-title">
+                    <h2 id="pilowlava-txt" style="color:var(--blue);">SHORT DESCRIPTION</h2>
+                </div>
+                <div class="col-12 short-description-text">
+                    <h3 id="green-txt">excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Comments -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="container-fluid" id="comment-vewport">
+                        <div><h2 class="comment-title" id="white-txt">COMMENTS</h2></div>
+                        <div class="row comment-section-wrapper" >
+                            <div class="col-4">
+                                <div class="comment-wrapper">
+                                    <div class="comment-person-info"></div>
+                                    <div class="profile-pic"></div>
+                                    <h2 id="name">AUNTY LIAU</h4>
+                                    <h4 id="time">1hr ago</h3>
+                                    <p id="star">★ ★ ★ ★ ★</p>
+                                    <h3 id="comment">only spent $60 on the trip
+                                        super value and fun!</h3>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="comment-wrapper">
+                                    <div class="comment-person-info"></div>
+                                    <div class="profile-pic"></div>
+                                    <h2 id="name">AUNTY WONG</h2>
+                                    <h3 id="time">1hr ago</h3>
+                                    <p id="star">★ ★ ★ ★ ★</p>
+                                    <h3 id="comment">the namyang coffee is absolute the best!</h3>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="comment-wrapper" id="last-comment">
+                                    <div class="comment-person-info"></div>
+                                    <div class="profile-pic"></div>
+                                    <h2 id="name" style="width:fit-content;">AUNTY MEI</h2>
+                                    <h3 style="width:fit-content;" id="time">1hr ago</h3>
+                                    <p id="star">★ ★ ★ ★ ★</p>
+                                    <h3 id="comment">Love the vintage vibes from the town, recall my younger days.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Map Section -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 id="pilowlava-txt">LOCATION</h1>
+                    <img class="map-img" src="assets/images/map-location.png" height="667px" width="360px">
+                </div>
+                <div class="col-12">
+                    <div class="location-journey-wrapper">
+                        <div class="circle">
+                            <div id="starting-point"></div>
+                            <div id="dot"></div>
+                            <div id="dot"></div>
+                            <div id="dot"></div>
+                            <div id="ending-point"></div>
+                        </div>
+                        <div class="location-name-1">
+                            <h3>rustic old town nam heong coffee
+                                ipoh perak, 30000</h3>
+                        </div>
+                        <div class="location-name-2">
+                            <h3><b id="blue-txt">to</b> tasik cermin
+                                31350 ipoh, perak</h3>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.waze.com/en-GB/live-map/" target="_blank" style="text-decoration: none;">
+                    <button class="yellow-btn" id="cta-show-in-waze">
+                        <h2 id="green-txt" style="margin-bottom:-5px;">SHOW IN WAZE</h2>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        
+         <!-- Script -->
+         <script src="assets/js/aos.js"></script>
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 
+         <script>
+             AOS.init();
+         </script>
+    </body>
+
+     <!-- FOOTER -->
+     <footer>
+        <div class="container-fluid footer-1">
+            <div class="row footer-wrapper">
+                <div class="col-sm-6">
+                    <h4 id="copyright-text">copyright © 2022 all rights reserved.</h4>
+                </div>
+                <div class="col-sm-6 footer-logo-wrapper">
+                    <a href="https://www.instagram.com/waze/?hl=en" target="_blank" style="text-decoration:none;">
+                        <img id="social-media-icon" src="assets/social-media-icons/Instagram.png" alt="IG" size="16x16">
+                    </a>
+                    <a href="https://twitter.com/waze?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" style="text-decoration:none;">
+                        <img id="social-media-icon" src="assets/social-media-icons/Twitter.png" alt="Twt" size="16x16">
+                    </a>
+                    <a href="https://www.facebook.com/Waze/" target="_blank" style="text-decoration:none;">
+                        <img id="social-media-icon" src="assets/social-media-icons/Facebook.png" alt="FB" size="16x16">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>

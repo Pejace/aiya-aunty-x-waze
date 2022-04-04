@@ -1,0 +1,1333 @@
+/* General Css Start */
+@font-face {
+    font-family: 'rusticalight';
+    src: url('../assets/fonts/Rustica/rustica-light-webfont.woff') format('woff2'),
+         url('../assets/fonts/Rustica/rustica-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rusticamedium';
+    src: url('../assets/fonts/Rustica/rustica-medium-webfont.woff') format('woff2'),
+         url('../assets/fonts/Rustica/rustica-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rusticablack';
+    src: url('../assets/fonts/Rustica/rustica-black-webfont.woff') format('woff2'),
+         url('rustica-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pilowlava';
+    src: url('pilowlava-regular-webfont.woff2') format('woff2'),
+         url('pilowlava-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    font-family: pilowlava, rusticamedium, rusticablack, rusticalight sans-serif;
+    --white:#F3F3F3;
+    --yellow-light:#F9F9F1;
+    --yellow:#FFF4D4;
+    --black:#3d3d3d;
+    --green:#2BBF87;
+    --blue:#008CA7;
+    --red:#EE665A;
+}
+
+.title{
+    font-family: pilowlava;
+    font-weight: bold;
+    color:var(--black);
+    font-size:32pt;
+    line-height:34px;
+}
+
+h1{
+    font-family: rusticablack;
+    color:var(--black);
+    font-weight:bold;
+    font-size:20pt;
+    line-height:28px;
+}
+
+h2{
+    font-family: rusticamedium;
+    color:var(--black);
+    font-size:14pt;
+    line-height:18px;
+}
+
+h3{
+    font-family: rusticalight;
+    font-weight:300;
+    color:var(--black);
+    font-size:10pt;
+    line-height:18px;
+}
+
+h4{
+    font-family: rusticamedium;
+    color:var(--black);
+    font-size:7pt;
+    line-height:18px;
+}
+
+#pilowlava-txt{
+    font-family: pilowlava;
+}
+
+#blue-txt{
+    color:var(--blue);
+}
+
+#red-txt{
+    color:var(--red);
+}
+
+#green-txt{
+    color:var(--green);
+}
+
+#white-txt{
+    color:var(--white);
+}
+
+#yellow-txt{
+    color:var(--yellow);
+}
+
+body{
+    background-color: var(--yellow-light);
+}
+
+.line{
+    width: 330px;
+    height: 1px;
+    background-image: linear-gradient(to right, rgb(51, 51, 51) 0%, rgb(39, 39, 39) 50%, transparent 50%);
+    background-size: 10px 100px;
+    background-repeat: repeat-x;
+    margin:auto;
+}
+
+.yellow-btn{
+    border-radius: 15px;
+    height:50px;
+    width:280px;
+    text-align: center;
+    margin-top:30px;
+    padding:auto;
+    border:solid;
+    border-color: var(--black);
+    border-width: 1px;
+    background-color: var(--yellow-light);
+}
+/* General Css End */
+
+
+/* MENU PAGE START */
+
+.menu-content-wrapper{
+    margin:auto;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+#title{
+    font-family: pilowlava;
+}
+.menu-exit-1{
+    animation: rotate 1s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100% {transform: translateX(2px) translateY(6px) rotate(-45deg);}
+}
+
+.menu-exit-2{
+    animation: rotate2 1s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes rotate2{
+    100%{transform: translateX(2px) translateY(-4px) rotate(45deg);}
+}
+/* MENU PAGE END */
+
+
+
+/* HOMEPAGE SECTION START */
+
+/* Navigation Bar Section Start */
+.navigation-bar-section{
+    height:90px;
+    margin-top:30px;
+}
+.nav-bar-container{
+    height:80px;
+    width:340px;
+    position: fixed;
+    z-index: 3;
+    top:10px;
+    left:25px;
+    margin-bottom:200px;
+    margin-top:30px;
+}
+
+.navbar a {
+    color:var(--black);
+}
+
+.website-title-logo{
+    font-family: pilowlava;
+    font-weight: bold;
+    font-size: 20pt;
+    position: absolute;
+    display: inline-block;
+    top:20px;
+    left:20px;
+}
+
+.hamburger-menu-icon{ 
+    background-color:var(--black);
+    border-radius: 100%;
+    width:55px;
+    height:55px;
+    position:relative;
+    top:10px;
+    left:250px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content:center;
+}
+
+.line-wrapper{
+    align-items: center;
+    justify-content: center;
+    margin:15px;
+    margin-bottom:25px;
+    margin-left:12px;
+}
+
+#menu-icon-line-1{
+    border-top:3px solid var(--white);
+    position: relative;
+    display:inline-block;
+    width: 30px;
+    margin-bottom: -8px;
+}
+#menu-icon-line-2{
+    border-top:3px solid var(--white);
+    position: relative;
+    display:inline-block;
+    width: 30px;
+    margin-bottom:6px;
+}
+/*Navigation Bar Section End */
+
+
+/* Homepage Top Section Start */
+
+/* Image */
+.homepage-image{
+    margin:auto;
+    margin-top:30px;
+    margin-bottom: 20px;;
+}
+
+.year{
+    font-family: pilowlava;
+    font-size:36px;
+    margin-left:-160px;
+    
+}
+
+.aunty-in-your-area-img{
+    margin-top:-50px;
+    position: relative;
+    z-index: 1;
+}
+
+#homepage-title-line-top{
+    margin-top: 20px;
+}
+
+/* Title */
+.title-text{
+    margin-top:10px;
+}
+
+#aunty-in-yr-area{
+    font-size: 36px;
+    width:260px;
+    line-height: 36px;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title{
+    color:var(--black);
+}
+
+#homepage-title-line-bottom{
+    margin-bottom: 5px;
+}
+
+.scroll-text-indication{
+    width:fit-content;
+    height:fit-content;
+    margin:auto;
+}
+
+.container-wrapper{
+    position:relative;
+    top:-630px;
+    left:10px;
+    z-index:2;
+    height:630px;
+    width:330px;
+    border-style: solid;
+    border-width:1px;
+    border-color: var(--black);
+}
+
+.scroll-line-indication{
+    height:240px;
+    width:1px;
+    background-color: var(--black);
+    margin:auto;
+    margin-top:-630px;
+}
+/* Homepage Top Section End */
+
+
+/* Homepage Header01 Nostalgic Tour Section Start */
+.homepage-header-nostalgic-tour{
+    height:fit-content;
+    width:360px;
+    padding:20px;
+    margin:auto;
+    margin-top:-5px;
+    margin-bottom: -300px;
+}
+
+.headear-image{
+    margin:auto;
+    margin-top: 20px;
+}
+
+.header-nostalgic-tour{
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+.homepage-header-1-container{
+    position:relative;
+    top:-384px;
+    left:-5px;
+    z-index:2;
+    height:410px;
+    width:330px;
+    border-style: solid;
+    border-width:1px;
+    border-color: var(--black);
+}
+/* Homepage Header01 Nostalgic Tour Section End */
+
+
+/* Homepage About Us Section Start */
+.about-content-wrapper{
+    height:550px;
+    width:300px;
+    overflow-x:scroll;
+    margin-top:-50px;
+}
+
+.homepage-about-us-content-section{
+    height:550px;
+    width:1000px;
+}
+
+.about-title{
+    font-family: pilowlava;
+    font-size: 32px;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.about-content{
+    position:relative;
+    z-index:2;
+    height:fit-content;
+    width:330px;
+    padding:20px;
+    margin:auto;
+}
+
+#abt-content-waze{
+    margin-left:-10px;
+}
+
+.about-img-1, .about-img-2, .about-img-3{
+    margin-bottom:30px;
+}
+
+.about-img-2{
+    position:relative;
+    right:20px;
+}
+
+.about-img-3{
+    position:relative;
+    max-width:300px;
+    height:auto;
+}
+
+.about-text{
+    width:200px;
+    margin:auto;
+}
+
+.abt-container{
+    position:relative;
+    top:-580px;
+    left:20px;
+    z-index:1;
+    height:600px;
+    width:330px;
+    border-style: solid;
+    border-width:1px;
+    border-color: var(--black);
+}
+/* Homepage About Us Section End */
+
+
+/* Homepage Aunty Introduction Start */
+.aunty-general-introduction{
+    position:relative;
+    top:-500px;
+    left:20px;
+    z-index:1;
+    height:540px;
+    width:330px;
+    border-style: solid;
+    border-width:1px;
+    border-color: var(--black);
+}
+
+.intro-wrapper{
+    padding:20px 0px;
+    margin:auto;
+    padding-top:30px;
+}
+
+.aunty-intro-title{
+    font-family: pilowlava;
+    color:var(--red);
+    margin-bottom:20px;
+}
+
+.arrow-btn{
+    margin:20px auto;
+}
+/* Homepage Aunty Introduction End */
+
+
+/* Homepage Aunty Talking Patterns Start */
+.aunty-talking-pattern-section{
+    width:300px;
+    margin:auto;
+    margin-top:-400px;
+}
+
+.talking-pattern-content-viewport{
+    height:550px;
+    width:300px;
+    overflow-x:scroll;
+    margin-top:20px;
+}
+.talking-pattern-content-wrapper{
+    width:1500px;
+    height:500px;
+    position: relative;
+    z-index:2;
+}
+
+.aunty-talking-pattern-title{
+    margin-bottom: 30px;
+}
+
+#pattern-title-short-txt{
+    margin-top: 10px;;
+}
+
+#talking-pattern-1{
+    margin-left:-40px;
+}
+
+#pattern-title{
+    margin-bottom:10px;
+}
+
+#pattern-txt{
+    font-family: pilowlava;
+    color:var(--red);
+    font-weight: 100;
+    margin-top: 5ps;
+}
+#pattern-line{
+    margin-left:-24px;
+}
+
+.talking-pattern-img-1, .talking-pattern-img-2, .talking-pattern-img-3, .talking-pattern-img-4{
+    margin-top: 30px;
+    margin-bottom:60px;
+    margin-left:10px;
+}
+
+.talking-pattern-content{
+    margin-bottom:60px;
+    width:200px;
+    margin:auto;
+}
+
+.takling-pattern-container{
+    position:relative;
+    top:-720px;
+    left:-15px;
+    z-index:1;
+    height:760px;
+    width:330px;
+    border-style: solid;
+    border-width:1px;
+    border-color: var(--black);
+}
+/* Homepage Aunty Talking Patterns End */
+
+
+/* Homepage CTA Section Start */
+.cta-download-voice-pack{
+    position:relative;
+    top:-620px;
+    bottom:-800px;
+    margin:auto;
+    margin-bottom:-540px;
+    z-index:1;
+    height:360px;
+    width:330px;
+    border-style: solid;
+    border-width:1px;
+    border-color: var(--black);
+}
+
+.cta-voicepack-content-wrapper{
+    margin:auto;
+    height:400px;
+    width:300px;
+    padding:20px;
+}
+
+.voice-pack-headline{
+    font-family: pilowlava;
+    color:var(--blue);
+}
+/* Homepage CTA Section End */
+
+
+/* Next Page CTA Start*/
+.cta-link-wrapper{
+    width:300px;
+    height:300px;
+    margin:auto;
+    margin-top:60px;
+    margin-bottom:-60px;
+}
+
+#aunty-at-kl{
+    margin-top: -10px;
+    font-family: pilowlava;
+    color:var(--green);
+    font-size: 32px;
+}
+/* Next Page CTA End*/
+
+
+/* FOOTER */
+.footer-wrapper{
+    height: 100px;
+    width:375px;
+    padding:20px;
+    padding-top:30px;
+    background-color: var(--black);
+}
+#copyright-text{
+    color:var(--white);
+    font-weight:lighter;
+    margin-left:-10px;
+}
+.footer-logo-wrapper{
+    width:fit-content;
+    position:relative;
+    left:240px;
+    top:-30px;
+}
+#social-media-icon{
+    margin:auto 5px;
+    display:inline-block;
+}
+/* HOMEPAGE SECTION END */
+
+
+
+
+/* STORY PAGE SECTION START */
+
+/* Title Section */
+.aunty-a-kl-img{
+ margin-bottom:20px;
+}
+
+.aunty-a-kl-title{
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+
+#aunty-a-kl-title-text{
+    margin-top:16px;
+    margin-bottom:12px;
+}
+
+.story-page-title-wrapper{
+    margin-top: 0px;
+}
+
+.scroll-text-indication-1{
+    margin-top:10px;
+}
+
+.scroll-line-indication-1{
+    height:120px;
+    width:1px;
+    background-color: var(--black);
+    margin:auto;
+}
+
+#scroll-text{
+    margin-top:15px;
+}
+
+.aunty-a-kl-container{
+    position:relative;
+    top:-630px;
+    left:22px;
+    z-index:1;
+    height:500px;
+    width:330px;
+    border-style: solid;
+    border-width:1px;
+    border-color: var(--black);
+}
+
+
+
+/* Headline 01 Nostalgic Tour in KL */
+.tour-in-kl{
+    margin:auto;
+    margin-top:-480px;
+}
+.story-page-nostalgic-kl-tour{
+    width:280px;
+    margin:auto;
+}
+
+.vintage-waze{
+    margin:auto;
+    margin-top:30px;
+    margin-bottom: 40px;
+    margin-left:-15px;
+}
+
+.explore-now{
+    margin-top:30px;
+}
+
+#explore-now-txt{
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.explore-scroll-line{
+    height:160px;
+    width:1px;
+    background-color: var(--black);
+    margin:auto;
+}
+
+.tour-in-kl-container{
+    position:relative;
+    top:-640px;
+    left:22px;
+    z-index:1;
+    height:480px;
+    width:330px;
+    border-style: solid;
+    border-width:1px;
+    border-color: var(--black);
+}
+
+
+
+/* Map Viewport */
+.map-viewport-section{
+    margin:auto;
+    margin-top: -480px;
+}
+
+#cta-open-in-waze{
+    margin:auto;
+    margin-top:40px;
+    margin-left:50px;
+    margin-bottom:100px;
+}
+
+
+
+/* CTA Create Own Journey */
+.cta-create-journey-wrapper{
+    height:fit-content;
+    width:330px;
+    padding:20px;
+    margin:auto;
+    margin-bottom:60px;
+    margin-top: 60px;
+}
+
+#cta-create-journey-txt{
+    margin-bottom:20px;
+}
+
+.pacman-img{
+    margin:10px auto;
+}
+
+#cta-create-journey-content{
+    width:200px;
+    margin:auto;
+    margin-top:10px;
+    margin-bottom: 30px;
+}
+
+.cta-not-an-aunty{
+    position: relative;
+    z-index: 2;
+    margin:auto;
+    margin-bottom:80px;
+    font-style: italic;   
+}
+
+.cta-solution{
+    margin:auto;
+    margin-top:80px;
+}
+
+#no-worries{
+    margin-bottom:30px;
+}
+
+#maa-img{
+    margin:auto;
+    margin-bottom: 30px;
+    margin-left:20px;
+}
+
+#cta-solution-text{
+    margin:auto;
+    width:220px;
+}
+
+#cta-create-btn{
+    position: relative;
+    z-index: 2;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:100px;
+}
+
+.cta-create-journey-container{
+    position:relative;
+    top:-1100px;
+    left:-22px;
+    z-index:1;
+    height:1100px;
+    width:330px;
+    border-style: solid;
+    border-width:1px;
+    border-color: var(--black);
+    margin:auto;
+    margin-bottom:-1100px;
+}
+/* STORY PAGE SECTION END */
+
+
+
+/* HOW TO CREATE - TUTORIAL PAGE SECTION START */
+/* Tutorial Title */
+.tutorial-title{
+    height:160px;
+    margin:auto;
+    margin-top: 60px;
+    margin-bottom: -30px;
+}
+
+.tutorial-title-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Tutorial Steps */
+.tutorial-content-wrapper{
+    height:auto;
+    padding:20px;
+    margin:auto;
+}
+
+.tutorial-img{
+    width:auto;
+    height:300px;
+    margin-bottom:60px;
+}
+
+.tutorial-steps-content{
+    width:200px;
+    margin: auto;
+    margin-bottom:80px;
+}
+
+#tutorial-img-2, #tutorial-img-3{
+    padding-left:10px;
+}
+
+/* Create Now CTA Section */
+.cta-ready-create{
+    margin:auto;
+    margin-bottom: 120px;
+    margin-right: -10px;
+}
+
+#cta-ready-create-btn{
+    margin-left:-20px;
+}
+
+/* Contact us CTA Section */
+#cta-container{
+    padding-top:20px;
+    position:relative;
+    z-index:2;
+    height:540px;
+    width:330px;
+    border-style: solid;
+    border-width:1px;
+    border-color: var(--black);
+    margin:auto;
+    margin-bottom:60px;
+}
+.cta-contact-us{
+    margin:80px auto;
+}
+
+#face-problem-txt{
+    margin-bottom: 30px;
+}
+
+.ah-boy-img{
+    position: relative;
+    z-index: 1;
+    margin:auto;
+    top:-70px;
+    left:20px;
+}
+
+#cta-contact-us-btn{
+    margin:auto;
+    margin-top:30px;
+}
+
+
+/* Inspiration Content */
+.location-icon-wrapper{
+    padding-top:20px;
+    position:relative;
+    z-index:2;
+    height:900px;
+    width:330px;
+    border-style: solid;
+    border-width:1px;
+    border-color: var(--black);
+    margin:auto;
+    margin-bottom:-700px;
+    margin-top: -140px;
+}
+.inspiration-title{
+    margin:110px auto 20px auto;
+}
+
+.location-icon{
+    margin:20px auto;
+}
+#cta-upload-btn{
+    margin-top:60px;
+    margin-bottom:60px;
+}
+
+/* Cta Show Me Summary Next Page */
+.cta-show-me-summary-wrapper{
+    margin-top:60px;
+    margin-bottom:60px;
+}
+
+/* HOW TO CREATE - TUTORIAL PAGE SECTION END */
+
+
+
+
+/* SUMMARY PAGE SECTION START */
+
+/* Summary Content */
+.summary-section{
+    margin-bottom: 80px;
+}
+.summary-title{
+    margin:100px auto 40px auto;
+}
+
+.content-wrapper{
+    margin:20px auto;
+    background-color: var(--yellow-light);
+    border: solid 1px var(--black);
+    width:330px;
+    height:280px;
+    padding:20px;
+    text-align: center;
+}
+
+.summary-content-txt-title,.summary-content-txt{
+    width:240px;
+    margin:auto;
+}
+
+.summary-content-txt-title{
+    margin-bottom: 10px;
+}
+
+.features-img{
+    width:auto;
+    height:140px;
+    margin: 0px auto 10px auto;
+}
+
+
+/* Cta Download Waze Section */
+
+.cta-download-waze-section{
+    margin-top: 80px;
+}
+
+#cta-download-waze-btn{
+    background-color: #33CCFF;
+    margin-bottom: 80px;
+}
+
+.waze-icon{
+    margin-top:30px;
+}
+
+/* Follow Our Social Media */
+.follow-social-media{
+    margin: auto;
+    margin-top: 60px;
+    width:330px;
+}
+
+.social-media-icon-large{
+    margin:10px auto 30px auto;
+}
+
+#social-media-icon-1{
+    padding:15px;
+}
+
+#social-media-icon-2{
+    padding:15px;
+}
+
+#social-media-icon-3{
+    padding:15px;
+}
+/* SUMMARY PAGE SECTION END */
+
+
+
+/* ABOUT AUNTY PAGE SECTION START */
+.blue-body{
+    background-color: var(--blue);
+}
+
+#light-menu{
+    background-color: var(--yellow);
+}
+
+#white-line{
+    background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, transparent 50%);
+}
+
+/* Top Section */
+.line-top{
+    width: 330px;
+    height: 1px;
+    background-size: 10px 100px;
+    background-repeat: repeat-x;
+    margin:auto;
+    margin-bottom:-20px;
+    margin-top: 20px;
+}
+
+.top-section{
+    padding:10px;
+    margin:auto;
+}
+
+#back-icon{
+    width:16px;
+    height:16px;
+    position:relative;
+    right:-16px;
+    bottom:-25px;
+}
+.date{
+    width:fit-content;
+    position:relative;
+    left:230px;
+    bottom:-10px;
+}
+
+
+/* Content */
+.aunty-content-wrapper{
+    padding:20px 30px;
+    margin-top:10px;
+    margin-bottom:-50px;
+}
+
+.aunty-intro-txt{
+    width:280px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.title{
+    margin-top:60px;
+    margin-bottom:30px;
+}
+
+#aunty-img{
+    margin:30px auto;
+    width:176px;
+    height:auto;
+}
+
+.aunty-detail-content{
+    width:280px;
+    margin:auto;
+    margin-top: 30px;
+}
+
+.aunty-means-title{
+    margin-bottom:30px;
+}
+
+.top-section-content-container{
+    position:relative;
+    top:-590px;
+    z-index:1;
+    height:560px;
+    width:330px;
+    border-style: solid;
+    border-width:1px;
+    border-color: var(--white);
+    margin:auto;
+    margin-bottom:-440px;
+}
+
+.bottom-section-content-container{
+    position:relative;
+    top:-730px;
+    z-index:1;
+    height:630px;
+    width:330px;
+    border-style: solid;
+    border-width:1px;
+    border-color: var(--white);
+    margin:auto;
+    margin-bottom:-740px;
+}
+
+
+/* Back To Top Button */
+.back-to-top-btn{
+    width:50px;
+    height:50px;
+    padding:10px;
+    background-color: var(--yellow);
+    border-radius: 100%;
+    position:relative;
+    right:-270px;
+    margin:60px 0;
+}
+
+#back-to-top-icon{
+    margin-top: 4px;
+    margin-left: 2px;
+}
+/* ABOUT AUNTY PAGE SECTION END */
+
+
+
+/* LOCATION-DETAILS_EXTENSION PAGE FROM OTHER INSPIRATION START */
+
+/* Top Section Start */
+
+/* Image */
+.background-image{
+    height:200px;
+    width:375px;
+    margin:auto;
+    overflow: hidden;
+}
+#ipoh-image{
+    margin-left: -12px;
+}
+/* name N icons */
+.place-content-section{
+    background-color: var(--white);
+    height:100px;
+    padding:20px;
+}
+
+.place-title-section{
+    margin-left:-10px;
+}
+
+.place-title-section-icon{
+   width:fit-content;
+   position:relative;
+   right:-100px;
+}
+
+#share-icon{
+    margin-right:20px;
+}
+/* Top Section End */
+
+
+/* Review Section Start */
+/* Ratings */
+.rate-icon-wrapper{
+    width:fit-content;
+    margin:10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#rate-icon{
+    margin-bottom: 10px;
+}
+
+#rate-name{
+    margin-top:-10px;
+    font-weight: bold;
+}
+/* Short Descriptions */
+.short-description-title{
+    margin-top: 20px;
+    margin-left: 10px;
+    width:280px;
+}
+
+.short-description-text{
+    margin-left: 10px;
+    margin-bottom: 40px;
+    width:330px;
+}
+
+
+/* Comment Section */
+.comment-section-wrapper{
+    width:1000px;
+    height:200px;
+    margin-left: -12px;
+}
+
+.comment-wrapper{
+    border-radius: 16px;
+    height:140px;
+    width:280px;
+    background-color: var(--white);
+    margin:20px 5px;
+    padding: 20px;
+}
+
+#comment-vewport{
+    margin-left: -25px;
+    width:390px;
+    overflow-x: scroll;
+    background-color: var(--blue);
+    margin-bottom: 30px;
+}
+
+.comment-title{
+    position: relative;
+    top:15px;
+    left:8px;
+    font-family: pilowlava;
+}
+
+.profile-pic{
+    border-radius: 100%;
+    width:30px;
+    height:30px;
+    background-color: var(--red);
+}
+
+#name{
+    position: relative;
+    width:fit-content;
+    top:-20px;
+    left:40px;
+}
+
+#time{
+    position: relative;
+    top:-50px;
+    left:200px;
+    width:fit-content;
+}
+
+#star{
+    position: relative;
+    top:-40px;
+    left:5px;
+}
+
+#comment{
+    width:200px;
+    position: relative;
+    top:-50px;
+}
+
+.comment-person-info{
+    margin: auto;
+}
+
+#last-comment{
+    margin-right:-50px;
+}
+/* Review Section End  */
+
+
+/* MAP Section */
+.map-img{
+    position: relative;
+    top:-50px;
+    z-index: -1;
+}
+
+.location-journey-wrapper{
+    background-color: var(--yellow-light);
+    position: relative;
+    z-index: 1;
+    width:360px;
+    height:400px;
+    top:-300px;
+    margin: auto;
+    margin-left: -5px;
+    margin-bottom: -400px;
+    padding:30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.circle{
+    position: relative;
+    z-index: 1;
+    width:fit-content;
+    height:fit-content;
+    align-items: center;
+    flex-direction: column;
+}
+#ending-point{
+    width:10px;
+    height:10px;
+    border-radius: 100%;
+    border-color: var(--blue);
+    border-width: 3px;
+    border-style: solid;
+    margin:15px auto;
+}
+#dot{
+    width:3px;
+    height:3px;
+    border-radius: 100%;
+    background-color: var(--blue);
+    margin:10px auto;
+}
+#starting-point{
+    width:10px;
+    height:10px;
+    border-radius: 100%;
+    background-color: var(--blue);
+    margin:15px auto;
+}
+.location-name-1{
+    margin:auto;
+    width:200px;
+    margin-top:-100px;
+    margin-bottom: 40px;
+}
+
+.location-name-2{
+    margin:auto;
+    width:200px;
+}
+
+/* CTA BUTTON */
+#cta-show-in-waze{
+    position: relative;
+    z-index: 1;
+    top:-120px;
+    right:-35px;
+}
+/* footer */
+.footer-1{
+    position: relative;
+    z-index: 1;
+}
+/* LOCATION-DETAILS_EXTENSION PAGE FROM OTHER INSPIRATION END */
